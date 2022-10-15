@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jquery Project</title>
+</head>
+
+<body>
+    <header class="page-headerr">
+        <h1 class="text-center">Project</h1>
+        <hr>
+        <div class="d-flex align-">
+            <button type="button" class="btn btn-secondary firstheading" data-bs-toggle="modal"
+                data-bs-target="#Heading">Heading</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <button type="button" class="btn btn-secondary secondheading" data-bs-toggle="modal"
+                data-bs-target="#SubHeading">Sub-Heading</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                
+            <button type="button" class="btn btn-secondary thirdform" data-bs-toggle="modal" data-bs-target="#Form">Form</button>
+        </div>
+    </header>
+    <div class="modal fade Heading" id="Heading" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Heading</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="headingform" class="headingform">
+                        <div class="mb-3">
+                            <label for="inputheading" class="form-label">Enter a heading of subject</label>
+                            <input type="text" class="form-control inputheading" id="inputheading" aria-describedby="Help">
+                            &emsp;
+                        </div>
+                        <button type="submit" id="subh" class="btn btn-primary subh">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade SubHeading" id="SubHeading" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sub-Heading</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="subheadingform" class="subheadingform">
+                        <div class="mb-3">
+                            <label for="inputheading" class="form-label">Choose a Heading</label>
+                            <select class="form-control listhead" id="listhead">
+                                <option value="select">------------Select Heading-----------</option>
+                            </select>
+                            <label for="inputsubheading" class="form-label">Enter sub-heading for heading</label>
+                            <input type="text" class="form-control inputsubheading" id="inputsubheading" aria-describedby="Help">
+                            &emsp;
+                        </div>
+                        <button type="submit" id="subsh" class="btn btn-primary subsh">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Form" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="finalform" id="finalform">
+                        <div class="mb-3">
+                            <label for="inputheadingform" class="form-label inputsubheadingform">Choose a Heading</label>
+                            <select class="form-control listheadform" id="listheadform">
+                                <option value="select">------------Select Heading-----------</option>
+                            </select>
+                            <label for="inputsubheading" class="form-label">Choose a Sub-Heading</label>
+                            <select class="form-control listsubhead" id="listsubhead">
+                                <option value="select">------------Select Sub-Heading-----------</option>
+                            </select>
+                            <label for="inputform" class="form-label inputform">Choose a Field Type</label>
+                            <select class="form-control inputtype" id="inputtype">
+                                <option value="select">------------Select Field Type-----------</option>
+                                <option value="text">Text</option>
+                                <option value="textarea">Text Area</option>
+                                <option value="email">Email</option>
+                                <option value="password">Password</option>
+                                <option value="date">Date</option>
+                                <option value="time">Time</option>
+                                <option value="file">File Upload</option>
+                                <option value="number">Number</option>
+                                <option value="tel">Contact Number</option>
+                                <option value="search">Search</option>
+                                <option value="url">URL</option>
+                                <option value="color">Color</option>
+                                <option value="range">Range</option>
+                                <option value="radio">Radio</option>
+                                <option value="checkbox">CheckBox</option>
+                                <option value="select">Select</option>
+                                <option value="submit">Button</option>
+                            </select>
+                            <br>
+                            <lable for="lable" class="form-label"> Enter Field Label</lable>
+                            <input type="text" class="form-control inputlable" id="inputlable" aria-describedby="Help">
+                            <lable for="class" class="form-label"> Enter Field Class</lable>
+                            <input type="text" class="form-control inputclass" id="inputclass" aria-describedby="Help">
+                            <lable for="value" class="form-label"> Enter Value for Field</lable>
+                            <input type="text" class="form-control inputvalue" id="inputvalue" aria-describedby="Help">
+                            <lable for="place-holder" class="form-lable"> Enter Place Holder Value</lable>
+                            <input type="text" class="form-control inputplaceholder" id="inputplaceholder" aria-describedby="Help">
+                            <lable for="option" class="form-lable"> Enter Options for Field</lable>
+                            <input type="text" class="form-control inputoption" id="inputoption" aria-describedby="Help"><br>
+
+                            <input type="checkbox" class="group1" id="inputrequired" aria-describedby="Help">
+                            <lable for="required" class="form-lable"> Required</lable><br>
+                            <input type="checkbox" class="" id="inputreadonly" aria-describedby="Help">
+                            <lable for="read-only" class="form-lable"> Read Only</lable><br>
+                            <input type="checkbox" class="group1" id="inputdisable" aria-describedby="Help">
+                            <lable for="diable" class="form-lable"> Disable</lable>
+
+                        </div><br>
+                        <button type="submit" id="subform" class="btn btn-primary subform">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main></main>
+    <div class="modal fade jlkjlkjlk" id="Form" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="finalform" id="finalform">
+                        <div class="mb-3">
+                            <label for="inputheadingform" class="form-label inputheadingform">Choose a Heading</label>
+                            <select class="form-control" id="listheadform">
+                                <option value="select">------------Select Heading-----------</option>
+                            </select>
+                            <label for="inputsubheading" class="form-label inputsubheading">Choose a Sub-Heading</label>
+                            <select class="form-control listsubhesd" id="listsubhead">
+                                <option value="select">------------Select Sub-Heading-----------</option>
+                            </select>
+                            <label for="inputform" class="form-label">Choose a Type of Field</label>
+                            <select class="form-control inputtype" id="inputtype">
+                                <option value="select">------------Select Type Field-----------</option>
+                            </select>
+                            <button type="submit" id="subform" class="btn btn-primary subform">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

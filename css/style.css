@@ -1,0 +1,65 @@
+.page-headerr {
+    background-color: #13a0b3;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 2px 100px 20px 100px;
+    color: white;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.border {
+    
+    border-color: white;
+    border-radius: 5px;
+    width: 10px;
+    padding: 20px;
+}
+
+.centered {
+    right: 50%;
+}
+
+.left {
+    left: 0px;
+}
+
+.right {
+    right: 0px;
+}
+
+.modal-header,
+h4,
+.close {
+    background-color: #13a0b3;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-footer {
+    background-color: #e9e9e9;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main,
+h2 {
+    margin-left: 50px;
+}
+
+h3 {
+    margin-left: 100px;
+}
